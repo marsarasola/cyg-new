@@ -1,0 +1,150 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+/* Estilos principales para la caja de login */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #6ebec3;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-box button:hover {
+    background: #173738;
+    color: #fff;
+    border-radius: 1px;
+    box-shadow: 0 0 1px #51595a,
+        0 0 5px #ffffff,
+        0 0 5px #ffffff,
+        0 0 5px #03e9f4;
+}
+
+.login-box form p .error-message {
+    color: #ba0000;
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .login-box h2 img {
+        width: 50%; /* Cambiar el tamaño del logo en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .login-box h2 img {
+        width: 60%; /* Cambiar el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .login-box form button {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .login-box .user-box input {
+        font-size: 14px;
+    }
+
+    .login-box .user-box label {
+        font-size: 14px;
+    }
+}

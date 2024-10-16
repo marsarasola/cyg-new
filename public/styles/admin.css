@@ -1,0 +1,209 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; /* Fondo suave */
+    color: #333; /* Color del texto */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrar el contenedor verticalmente */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #675391; /* Color del título */
+    text-align: center; /* Alinea el contenido horizontalmente */
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo de las reseñas */
+}
+
+.button {
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+    background-color: #6c2e85; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Quita el subrayado */
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #7f2250; /* Color al pasar el mouse */
+}
+
+a {
+    color: #6c2e85; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* Reduce el margen en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    h2 {
+        font-size: 24px; /* Ajusta el tamaño de fuente del título */
+    }
+
+    h3 {
+        font-size: 20px; /* Ajusta el tamaño de fuente del subtítulo */
+    }
+
+    .button {
+        font-size: 14px; /* Ajusta el tamaño del botón */
+        padding: 8px 12px; /* Reduce el padding del botón */
+    }
+
+    li {
+        font-size: 14px; /* Ajusta el tamaño de fuente de las reseñas */
+        padding: 8px; /* Reduce el padding en las reseñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 18px; /* Reduce el tamaño de fuente del subtítulo */
+    }
+
+    .button {
+        width: 100%; /* Hace que el botón ocupe todo el ancho */
+        text-align: center; /* Centra el texto del botón */
+    }
+
+    li {
+        font-size: 13px; /* Reduce el tamaño de fuente de las reseñas aún más */
+    }
+}
+
+/* styles for add_review.php */
+
+/* Estilos para el contenedor de agregar reseñas */
+.add-review-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrar el contenedor verticalmente */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden;
+}
+
+.add-review-container h2 {
+    margin-bottom: 20px;
+    color: #675391; /* Color del título */
+    text-align: center; /* Alinea el contenido horizontalmente */
+}
+
+.add-review-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-review-container input[type="text"],
+.add-review-container input[type="number"],
+.add-review-container textarea {
+    width: 100%; /* Hace que el campo ocupe todo el ancho del contenedor */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo de los campos de entrada */
+    color: #333; /* Color del texto */
+}
+
+.add-review-container .button {
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+    background-color: #6c2e85; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Quita el subrayado */
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-align: center; /* Centra el texto del botón */
+}
+
+.add-review-container .button:hover {
+    background-color: #7f2250; /* Color al pasar el mouse */
+}
+
+/* Responsive Styles para el contenedor de agregar reseñas */
+@media (max-width: 768px) {
+    .add-review-container {
+        margin: 20px; /* Reduce el margen en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .add-review-container h2 {
+        font-size: 24px; /* Ajusta el tamaño de fuente del título */
+    }
+
+    .add-review-container .button {
+        font-size: 14px; /* Ajusta el tamaño del botón */
+        padding: 8px 12px; /* Reduce el padding del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .add-review-container h2 {
+        font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .add-review-container .button {
+        width: 100%; /* Hace que el botón ocupe todo el ancho */
+    }
+}
+
+.review-image {
+    max-width: 150px; /* Limitar el ancho máximo */
+    max-height: 150px; /* Limitar la altura máxima */
+    width: auto; /* Ajusta el ancho automáticamente si la altura es mayor */
+    height: auto; /* Ajusta la altura automáticamente si el ancho es mayor */
+    display: block; /* Para que cada imagen esté en su propia línea */
+    margin: 10px 0; /* Agregar espacio alrededor de las imágenes */
+}
